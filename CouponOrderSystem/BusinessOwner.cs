@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace CouponOrderSystem
 {
-    class Program
+    class BusinessOwner : Person
     {
-        static void Main(string[] args)
-        {
+        public int BusinessOwnerId { get; set; }
 
-        }
+        public virtual List<Business> BuisnessList { get; set; }
     }
 }
