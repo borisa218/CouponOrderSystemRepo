@@ -10,6 +10,13 @@ namespace CouponOrderSystem
     {
         static void Main(string[] args)
         {
+            using (var ctx = new CouponDBContext())
+            {
+                Coupon c = new Coupon() { CouponName = "New Coupon" };
+
+                ctx.Coupons.Add(c);
+                ctx.SaveChanges();
+            }
 
         }
     }
