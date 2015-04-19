@@ -8,6 +8,5 @@ namespace CouponOrderSystem
 {
     class Admin : Person
     {
-        public int AdminId { get; set; }
     }
 }

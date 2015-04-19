@@ -8,8 +8,6 @@ namespace CouponOrderSystem
 {
     class BusinessOwner : Person
     {
-        public int BusinessOwnerId { get; set; }
-
-        public virtual List<Business> BuisnessList { get; set; }
+        public  List<Business> BuisnessList { get; set; }
     }
 }

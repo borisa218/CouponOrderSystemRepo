@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 namespace CouponOrderSystem
 {
     class Costumer : Person
-    {
-        public int CostumerId { get; set; }
-
-        public virtual List<Category> Prefrences { get; set; }
-        public virtual List<Coupon> CostumerCoupons { get; set; }
+    {        
+        public List<Category> Prefrences { get; set; }
+        public List<Coupon> CostumerCoupons { get; set; }
+        public List<Coupon> CoustomerFavorites { get; set; }
     }
 }

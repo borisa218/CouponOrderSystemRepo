@@ -12,9 +12,9 @@ namespace CouponOrderSystem
         {
             using (var ctx = new CouponDBContext())
             {
-                Coupon c = new Coupon() { CouponName = "New Coupon" };
+                BusinessOwner bo = new BusinessOwner() { Name = "boris", Age = 26, Email = "sdsd", Password = "1232", Sex = Sex.Male , UserName = "borisal" };
 
-                ctx.Coupons.Add(c);
+                ctx.Persons.Add(bo);
                 ctx.SaveChanges();
             }
 
